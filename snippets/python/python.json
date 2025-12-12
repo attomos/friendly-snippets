@@ -230,5 +230,20 @@
         "prefix": "#mark",
         "body": "# %% [markdown]",
         "description": "Add a new markdown cell"
+    },
+    "aoc": {
+        "prefix": "ai",
+        "body": [
+            "from pathlib import Path",
+            "",
+            "inp = Path(\"input.txt\")",
+            "one_line = inp.read_text()",
+            "lines = [line for line in inp.read_text().splitlines()]",
+            "numbers = [int(line) for line in inp.read_text().splitlines()]",
+            "paragraphs = [paragraph for paragraph in inp.read_text().split(\"\\n\\n\")]",
+            "",
+            "$1"
+        ],
+        "description": "AOC input snippet"
     }
 }
